@@ -6,4 +6,5 @@ This is a collection of tools runnable using docker. This is a demo that execute
 
 Run the following command in the terraform home project
 
-```docker run --rm -it -w /$(basename $(pwd)) -v $(pwd):/$(basename $(pwd)) -v $HOME/.aws/:/home/root/.aws/ -v ~/.aws:/root/.aws  hashicorp/terraform:1.3.6 plan```
+```bash
+docker run --rm -it -w /$(basename $(pwd)) -v $(pwd):/$(basename $(pwd)) -v $HOME/.aws/:/home/root/.aws/ -v ~/.aws:/root/.aws  hashicorp/terraform:1.3.6 plan```
